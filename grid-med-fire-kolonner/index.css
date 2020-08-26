@@ -1,0 +1,16 @@
+article {
+    font-size: 48px;
+    background-color: peachpuff;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+}
+
+#grid-section {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    gap: 15px;
+    margin: 0 auto;
+}
