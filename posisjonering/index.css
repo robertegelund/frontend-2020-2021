@@ -1,0 +1,30 @@
+body, .av-frontend, .av-liv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    font-size: 20px;
+}
+
+.av-liv {
+    height: 400px;
+    width: 400px;
+    background-color: #112233;
+    border-radius: 50%;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.av-frontend {
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    height: 300px;
+    width: 300px;
+    background-color: goldenrod;
+    border-radius: 50%;
+}

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%; /* 16px * 0.625 = 10px */
+}
+
+#navigasjon {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a {
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 1em;
+}
+
+img {
+    width: 10em;
+}
+
+#logo {
+    margin-right: auto;
+}
