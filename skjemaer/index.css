@@ -1,0 +1,48 @@
+form {
+    font-size: 26px;
+    font-family: sans-serif;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    font-size: 26px;
+}
+
+form textarea {
+    font-size: 26px;
+}
+
+input[type=text], textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted black;
+    background-color: #112233;
+    color: gold;
+}
+
+form label {
+    margin-right: 20px;
+}
+
+input[type=radio] + label {
+    background-color: #112233;
+    color: gold;
+    padding: 12px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked + label {
+    background-color: plum;
+    color: white;
+}
+
+button {
+    padding: 10px 18px;
+    margin-top: 25px;
+}
