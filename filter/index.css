@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+img {
+    height: 100vh;
+    /* filter: blur(5px); */
+    /* filter: grayscale(50%) blur(2px); */
+    filter: invert(100%);
+    /* filter: sepia(80%) blur(2px); */
+    /* filter: contrast(120%); */
+    /* filter: brightness(150%); */
+
+    /* Brightness og contrast: 100 % tilsvarer originalbildet. Sett til lavere enn 100 % hvis du ønsker lavere brightness og kontrast. Sett til høyere enn 100 % hvis du ønsker mer brightness og kontrast */
+    
+    /* Grayscale: 100 % er helt sort-hvitt. 0 % tilsvarer originalfargene */
+
+    /* Blur: Jo flere piksler, desto mer blurry */
+}
+
