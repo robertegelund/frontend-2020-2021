@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduksjon til JavaScript</title>
+</head>
+<body>
+    <script>
+        // Legger inn elementer i HTML-flyten ved bruk av JavaScript
+        document.write("<h1>Introduksjon til JavaScript</h1>");
+        document.write("<p>I dag lærer vi veldig basic om JavaScript</p>");
+
+        // Definerer en konstant
+        const hilsen = "Hei på deg!";
+
+        // Definerer variabel og angir verdi i form av tekst
+        let farvel = "Ha det bra. Hyggelig å hilse på deg";
+
+        // Endrer variabelverdien til en annen tekst
+        farvel = "Vi sees igjen! Det var hyggelig";
+
+        // Skriver ut hilsen og farvel
+        document.write("<p>" + hilsen + "</p>");        
+        document.write("<p>" + farvel + "</p>");
+        
+        // JavaScript kan utføre regneoperasjoner (f.eks. +, -, / og *)
+        const resultat = 10 * 10;
+        document.write("Resultatet er: " + resultat);
+
+        // Inspiser (f.eks. i Chrome) og sjekk konsollen i nettleseren
+        console.log(resultat);
+
+        // console.log(resultat = 50) gir feilmelding, siden konstanter ikke kan endre verdi. Derfor stopper koden å kjøre her
+        console.log(resultat = 50); 
+
+        // Dette blir ikke med, siden koden stoppet å kjøre ovenfor. Hvis du fjerner console.log(resultat = 50) vil du se at koden kjører videre
+        console.log("Resultatet er: " + resultat);
+    </script>
+</body>
+</html>
