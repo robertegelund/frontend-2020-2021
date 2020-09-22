@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.article {
+    width: 600px;
+    height: 600px;
+    background-color: #112233;
+}
+
+button {
+    padding: 20px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velge HTML-elementer</title>
+</head>
+<body>
+    <!-- Disse elementene er laget med HTML på forhånd -->
+    <h1 id="overskrift">Velge HTML-elementer</h1>
+    <h2 id="underoverskrift">... er nyttig</h2>
+    <!-- Disse elementene er laget med HTML på forhånd -->
+    <article class="article">Hei</article>
+    <article class="article">På</article>
+    <article class="article">Deg</article>
+
+    <!-- I <script></script> begynner vi med DOM-manipulasjon (manipulasjon av HTML-elementer) i JavaScript -->
+    <script>
+        // Her velger vi elementet basert på id
+        const OVERSKRIFT = document.getElementById("overskrift");
+        // console.log(OVERSKRIFT);
+
+        // Her velger vi også elementet basert på id, men på en annen måte (resultatet er det samme)
+        const UNDEROVERSKRIFT = document.querySelector("#underoverskrift");
+        // console.log(UNDEROVERSKRIFT);
+
+        // Her velges det første elementet med class="article"
+        const ARTICLE = document.querySelector(".article");
+        // console.log(ARTICLE);
+
+        // Her velges alle elementene med class="article". De blir lagt i en liste.
+        const ARTICLES = document.querySelectorAll(".article");
+        // console.log(ARTICLES);
+
+        // Her velges det andre article-elementet (0 indikerer det første) fra lista ARTICLES
+        const ARTICLES_SECOND = ARTICLES[1];
+        // console.log(ARTICLES_SECOND);
+
+        // Dette vil gjøre akkurat det samme som querySelectorAll(".article")
+        document.getElementsByClassName("article");
+
+        // Farger skriften i elementet, som konstanten OVERSKRIFT refererer til, rød
+        OVERSKRIFT.style.color = "red";
+
+        // Husk at å bruke CSS via JavaScript krever camelcase (f.eks. fontSize i stedet for font-size)
+        OVERSKRIFT.style.fontSize = "60px";
+
+        // Her endrer vi teksten til OVERSKRIFT
+        OVERSKRIFT.innerText = "JavaScript er fett!"
+
+        // Her endrer vi HTML-en til overskriften
+        OVERSKRIFT.innerHTML = "<em>JavaScript er fett!</em>"
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML og Bilder</title>
+</head>
+<body>
+    
+    <article id="article">
+    </article>
+
+    <script>
+        const ARTICLE = document.querySelector("#article");
+        // console.log(ARTICLE);
+
+        const IMG_URL = "http://www.aftenposteninnsikt.no/sites/default/files/styles/preset_1_article_carousel_image/public/neseape02%20neseape_KR.jpg?itok=1hIhXVWf";
+
+        const ALT_TAG = "Apekatt med stor nese foran flokken sin";
+
+        ARTICLE.innerHTML = `
+            <img class="bilder" src=${IMG_URL} alt=${ALT_TAG}>
+        `;
+
+        // Her blir det ene bildet med class="bilder" valgt. Hadde det vært flere bilder med class="bilder", ville det første bildet blitt valgt.
+        const BILDE = document.querySelector(".bilder");
+
+        BILDE.style.width = "500px";
+        BILDE.style.border = "20px solid black";
+        ARTICLE.style.fontFamily = "sans-serif";
+
+        // Ved å bruke += bygger vi videre på det vi allerede har inne i et element
+        ARTICLE.innerHTML += `
+            <h1>Neseape og dens flokk</h1>
+        `;
+    </script>
+</body>
+</html>

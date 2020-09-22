@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tre typer apostrofer</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <script>
+        // Å definere konstanter med store bokstaver gjør det enklere å skille dem fra variabler seinere i koden
+        const HILSEN_FRA_MEG = "Hei på deg!";
+
+        // Definerer variabelen med camelcase (første ord liten bokstav, de andre ordene begynner med stor bokstav)
+        let farvelTilDeg = "Ha det bra!";
+
+
+        // Endrer verdien på variabelen
+        farvelTilDeg = "Sees igjen!";
+
+        // Her brukes doble apostrofer utenpå og enkle inni (samme hadde ikke gått an)
+        document.write(" <h1>Tre typer apostrofer '</h1> ");
+        
+        // Her brukes enkle apostrofer utenpå og doble inni (samme hadde ikke gått an)
+        document.write(' <h1>Tre typer "" apostrofer</h1> ');
+
+        // Bruke doble og enkle apostrofer i innsetting av bilder
+        document.write(" <img src=''> " + HILSEN_FRA_MEG);
+        document.write(' <img src=""> ' + HILSEN_FRA_MEG)
+        // Template literal lar oss skrive flere linjer kode etter hverandre
+        // Template literal lar oss også referere til konstanter og variable med ${}
+        // Her vi også lagt til en klasse på h1, slik at vi kan style med vanlig CSS
+        document.write(`
+            <h1 class='red'>"Overskrift"</h1>
+            <p>'${HILSEN_FRA_MEG}'</p>
+            <p>'${farvelTilDeg}'</p>
+        `);
+    </script>
+</body>
+</html>
