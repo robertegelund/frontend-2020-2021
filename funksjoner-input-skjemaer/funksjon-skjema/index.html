@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funksjoner og skjemaer</title>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    
+    <form id="skjema" action="">
+        <div>
+            <input placeholder="Skriv inn ditt fornavn" id="inp-fornavn" type="text" name="fornavn" autocomplete="off">
+        </div>
+        
+        <div>
+            <input placeholder="Skriv inn ditt etternavn" id="inp-etternavn" type="text" name="etternavn" autocomplete="off">
+        </div>
+       
+        <div>
+            <!-- Fordi button med type="submit" ligger inne i skjemaet, trenger vi ikke velge knappen i JavaScript. Skjemaet og knappen er automatisk koblet sammen -->
+            <button type="submit">Lagre data</button>
+        </div>
+    </form>
+
+    <p id="avsnitt"></p>
+</body>
+</html>
