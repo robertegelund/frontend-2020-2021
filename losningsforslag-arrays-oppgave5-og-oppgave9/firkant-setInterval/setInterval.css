@@ -1,0 +1,11 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100px;
+    background-color: #112233;
+}

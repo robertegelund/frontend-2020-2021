@@ -28,4 +28,3 @@ function lagAvsnitt ( ord1, ord2 ) {
 
 
 lagAvsnitt("Hei", "du!");
-
